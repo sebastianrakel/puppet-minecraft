@@ -13,7 +13,7 @@ class minecraft (
   $banned_players       = undef,
   $banned_ips           = undef,
   $white_list_players   = undef,
-
+  $service_provider     = 'rc',
   # The following are server.properties attributes, see
   # http://minecraft.gamepedia.com/Server.properties for information
   # Empty strings are represented as empty in templates, unlike undef

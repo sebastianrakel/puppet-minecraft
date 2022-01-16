@@ -3,13 +3,13 @@ class minecraft::source {
 
   case $minecraft::framework {
     'vanilla': {
-      $download = "https://s3.amazonaws.com/Minecraft.Download/versions/${minecraft::source}/minecraft_server.${minecraft::source}.jar"
+      $download = "https://s3.amazonaws.com/Minecraft.Download/versions/${minecraft::version}/minecraft_server.${minecraft::version}.jar"
     }
     'spigot': {
-      $download = "https://download.getbukkit.org/spigot/spigot-${minecraft::source}.jar"
+      $download = "https://download.getbukkit.org/spigot/spigot-${minecraft::version}.jar"
     }
     'craftbukkit': {
-      $download = "https://download.getbukkit.org/craftbukkit/craftbukkit-${minecraft::source}.jar"
+      $download = "https://download.getbukkit.org/craftbukkit/craftbukkit-${minecraft::version}.jar"
     }
   }
 

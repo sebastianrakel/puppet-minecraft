@@ -3,7 +3,7 @@ class minecraft::packages {
     class { 'java':
       distribution => 'jre',
       version      => 'latest',
-      package      => 'openjdk-11-jre-headless',
+      package      => 'openjdk-17-jre-headless',
     }
   }
 

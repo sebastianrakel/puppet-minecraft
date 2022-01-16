@@ -13,13 +13,13 @@ class minecraft::service {
     }
     'systemd': {
       systemd::unit_file { 'minecraft.service':
-        source => epp('minecraft/minecraft.service.epp', {
+        content            => epp('minecraft/minecraft.service.epp', {
           username         => $minecraft::user,
           workingdirectory => $minecraft::install_dir,
           heap_min         => $minecraft::heap_start,
           heap_max         => $minecraft::heap_size,
         }),
-        notify => Service['minecraft'],
+        notify             => Service['minecraft'],
       }
     }
   }

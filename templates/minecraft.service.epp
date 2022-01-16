@@ -3,10 +3,9 @@ Description=Minecraft Server
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/java -Xmx<%= heap_max %>M -Xms<%= heap_min %>M -jar minecraft_server.jar nogui 
-WorkingDirectory=<%= workingdirectory %>
-User=<%= username %>
-
+ExecStart=/usr/bin/java -Xmx<%= $heap_max %>M -Xms<%= $heap_min %>M -jar minecraft_server.jar nogui 
+WorkingDirectory=<%= $workingdirectory %>
+User=<%= $username %>
 
 [Install]
 WantedBy=multi-user.target

@@ -2,7 +2,8 @@ class minecraft::packages {
   if $minecraft::manage_java {
     class { 'java':
       distribution => 'jre',
-      version      => '17',
+      version      => 'latest',
+      package      => 'openjdk-11-jre-headless',
     }
   }
 

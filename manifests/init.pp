@@ -2,7 +2,8 @@ class minecraft (
   $user                 = 'minecraft',      # The user account for the Minecraft service
   $group                = 'minecraft',      # The user group for the Minecraft service
   $install_dir          = '/opt/minecraft', # Owned by user:group
-  $source               = '1.7.4',          # Minecraft (semvar) or CraftBukkit ('recommended', 'beta', or 'dev'), or direct source (URL for wget)
+  $framework            = 'vanilla',
+  $version              = '1.18.1',         # Minecraft (semvar) or CraftBukkit ('recommended', 'beta', or 'dev'), or direct source (URL for wget)
   $autostart            = true,             # Start service at boot
   $manage_java          = true,             # Manage the JRE package
   $heap_size            = '1024',           # The maximum Java heap size in MB
